@@ -5,6 +5,7 @@ from rest_framework import status
 from datetime import datetime
 
 
+@api_view(['GET'])
 def index(request):
     date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     message = 'server is live current time is: '
